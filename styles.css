@@ -1,0 +1,80 @@
+form{
+    width: 700px;
+    margin: 0 auto;
+    border-left:3px solid #000;
+    height:500px;
+    border-left: 13px outset #e6e0e0;
+}
+
+h1 {
+    font-size: 34px;
+    color: white;
+    text-align: left;
+    padding-left: 18px;
+    background-color: cornflowerblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+/*the following sequence  of span statesments breaks the span to new line*/
+h1 span {
+    display: inline;
+    color: white;
+    font-size: 24px;
+    background-color: cornflowerblue;
+  }
+h1 span:before {
+    content: "\a ";
+    white-space: pre-line;
+  }
+
+.section {
+    color: cornflowerblue;
+    font-size: 34px;
+    
+}
+
+
+.section span {
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    margin: 0 1px 0 5px;
+    color: white;
+    width: 20px;
+}
+
+.form-wrapper{
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.form-wrapper input[type="submit"]{
+    display: block;
+    width: 93%;
+    background-color: gainsboro;
+    border-radius: 9px;
+}
+
+/*
+.form-wrapper input[type="checkbox"]{
+    display: block;
+}*/
+
+.error{
+    display: none;
+}
+
+label input{
+    display: block;
+    width: 93%;
+    height:18px;
+    border-radius: 9px;
+    outline: none;
+}
+
+.privacy{
+    background-color: red;
+}
